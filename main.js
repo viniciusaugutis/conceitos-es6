@@ -73,7 +73,7 @@ const find = arr.find(function(item) {
 
 console.log(find);*/
 
-/*Arrow Functions*/
+/*Arrow Functions
 
 const arr = [1, 3, 5, 7];
 
@@ -84,5 +84,22 @@ const newArr = arr.map(item => {
 const newArray2 = arr.map(item => item + 2);
 
 console.log(newArr);
+
+const teste = () => {
+    return 'teste';
+}
+
+console.log(teste());*/
+
+/*Valores padrão*/
+
+function soma (a = 1, b = 3) {
+    return a + b;
+}
+
+const somaArrowFunction = (a = 3, b = 6) => a + b;
+soma(1);
+console.log(soma());
+
 
 

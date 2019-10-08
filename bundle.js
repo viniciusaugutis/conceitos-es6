@@ -75,12 +75,30 @@ const find = arr.find(function(item) {
 
 console.log(find);*/
 
-/*Arrow Functions*/
-var arr = [1, 3, 5, 7];
-var newArr = arr.map(function (item) {
-  return item + 2;
+/*Arrow Functions
+
+const arr = [1, 3, 5, 7];
+
+const newArr = arr.map(item => {
+    return item + 2;
 });
-var newArray2 = arr.map(function (item) {
-  return item + 2;
-});
+
+const newArray2 = arr.map(item => item + 2);
+
 console.log(newArr);
+
+const teste = () => {
+    return 'teste';
+}
+
+console.log(teste());*/
+
+/*Valores padrão*/
+function soma() {
+  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 3;
+  return a + b;
+}
+
+soma(1);
+console.log(soma());
