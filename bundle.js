@@ -179,7 +179,21 @@ const usuario2 = {...usuario1, empresa2: 'Maptriz', nome: 'Lucas'}
 console.log(usuario2);
 */
 
-/* Template literal*/
+/* Template literal
+
+const nome = 'Diego';
+const idade = 22;
+
+console.log(`Meu nome é ${nome} e tenho ${idade} anos`);
+
+*/
+
+/*Object short syntax */
 var nome = 'Diego';
-var idade = 22;
-console.log("Meu nome \xE9 ".concat(nome, " e tenho ").concat(idade, " anos"));
+var idade = 23;
+var usuario = {
+  nome: nome,
+  idade: idade,
+  empresa: 'Sotran'
+};
+console.log(usuario);

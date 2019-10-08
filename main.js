@@ -177,10 +177,23 @@ const usuario2 = {...usuario1, empresa2: 'Maptriz', nome: 'Lucas'}
 console.log(usuario2);
 */
 
-/* Template literal*/
+/* Template literal
 
 const nome = 'Diego';
 const idade = 22;
 
 console.log(`Meu nome é ${nome} e tenho ${idade} anos`);
 
+*/
+
+/*Object short syntax */
+
+const nome = 'Diego';
+const idade = 23;
+
+const usuario = {
+    nome,
+    idade,
+    empresa: 'Sotran'
+}
+console.log(usuario);
