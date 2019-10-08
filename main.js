@@ -1,3 +1,4 @@
+/* Classes
 class List {
     constructor() {
         this.data = [];
@@ -28,3 +29,19 @@ document.getElementById('novotodo').onclick = function() {
 }
 
 MatematicaStatic.soma(1, 5);
+*/
+
+/*Constantes e let*/
+
+const a = 5;
+
+function teste (x) {
+    let y = 2;
+
+    if (x > 5) {
+        console.log(x, y);
+        console.log(a);
+    }
+}
+
+teste(10);
