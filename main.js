@@ -186,7 +186,7 @@ console.log(`Meu nome é ${nome} e tenho ${idade} anos`);
 
 */
 
-/*Object short syntax */
+/*Object short syntax 
 
 const nome = 'Diego';
 const idade = 23;
@@ -196,4 +196,8 @@ const usuario = {
     idade,
     empresa: 'Sotran'
 }
-console.log(usuario);
+console.log(usuario);*/
+
+import { soma } from './funcoes';
+
+console.log(soma(1,2));
