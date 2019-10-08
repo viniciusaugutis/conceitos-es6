@@ -211,9 +211,9 @@ console.log(funcoes);
 */
 
 //Promise comum
-const minhaPromise = () => new Promise((resolve, reject) => {
+/*const minhaPromise = () => new Promise((resolve, reject) => {
     setTimeout(() => { resolve('Ok') }, 2000);
-});
+});*/
 
 /*minhaPromise().then(response => {
     console.log(response);
@@ -223,7 +223,7 @@ const minhaPromise = () => new Promise((resolve, reject) => {
 });*/
 
 //await é a mesma coisa que o .then()
-async function executaPromise() {
+/*async function executaPromise() {
     console.log(await minhaPromise());
     console.log(await minhaPromise());
     console.log(await minhaPromise());
@@ -236,4 +236,20 @@ const executaPromiseArrowFunction = async () => {
 };
 
 executaPromise();
-executaPromiseArrowFunction();
+executaPromiseArrowFunction();*/
+
+import axios from 'axios';
+
+class Api {
+    static async getUserInfo(username) {
+        try {
+            const response = await axios.get(`https://api.github.com/users/${username}`);
+            console.log(response);
+        } catch (err) {
+            console.warn('Erro na API. usuário não encontrado');
+        }
+    }
+}
+
+Api.getUserInfo('viniciusaugutis');
+Api.getUserInfo('viniciusaug2323232utis');
