@@ -102,7 +102,7 @@ soma(1);
 console.log(soma());
 */
 
-/*Desestruturação de objetos*/
+/*Desestruturação de objetos
 
 const usuario = {
     nome: 'Diego',
@@ -122,6 +122,58 @@ function mostraNome({ nome }) {
     console.log(nome);
 }
 
-mostraNome(usuario);
+mostraNome(usuario);*/
+
+/*Operadores Rest e Spread*/
+
+//REST - serve para pegar o resto das propriedades
+
+const usuario = {
+    nome: 'Diego',
+    idade: 23,
+    empresa: 'Sotran'
+};
+
+const {nome, ...resto} = usuario;
+
+console.log(nome);
+console.log(resto);
+
+const arr = [1,2,3,4];
+
+const [ a, b, ...c] = arr;
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+function soma (...params) {
+    return params.reduce((total, next) => total + next);
+}
+
+console.log(soma(1, 3, 4));
+console.log(somaResto(1, 4, 5));
+
+function somaResto(a, b, ...params) {
+    return params.reduce((total, next) => total + next);
+}
+
+//Spread : passar informação para outra estrutura de dados (array)
+
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+
+const arr3 = [...array1, ...array2];
+//mesma coisa que [1, 2, 3, 4, ,5 ,6]
+console.log(arr3);
+
+const usuario1 = {
+    nome: 'Diego',
+    idade: 23,
+    empresa: 'Sotran'
+};
+
+const usuario2 = {...usuario1, empresa2: 'Maptriz', nome: 'Lucas'}
+console.log(usuario2);
 
 

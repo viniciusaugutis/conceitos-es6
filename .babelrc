@@ -1,5 +1,6 @@
 {
-    "presets": ["@babel/preset-env"]
+    "presets": ["@babel/preset-env"],
+    "plugins": ["@babel/plugin-proposal-object-rest-spread"]
 }
 
 //preset env entende qual ambiente que está trabalhando (browser ou outro ambiente) e converte features do es6, es7 e es8 para funcionalidades que o navegador entende.
