@@ -45,7 +45,7 @@ function teste (x) {
 
 teste(10);*/
 
-/*Operação em vetores*/
+/*Operação em vetores
 
 const arr = [1, 3, 4, 5, 8, 9];
 
@@ -71,9 +71,18 @@ const find = arr.find(function(item) {
     return item == 4;
 });
 
-console.log(find);
+console.log(find);*/
 
+/*Arrow Functions*/
 
+const arr = [1, 3, 5, 7];
 
+const newArr = arr.map(item => {
+    return item + 2;
+});
+
+const newArray2 = arr.map(item => item + 2);
+
+console.log(newArr);
 
 
