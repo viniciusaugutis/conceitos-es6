@@ -124,7 +124,7 @@ function mostraNome({ nome }) {
 
 mostraNome(usuario);*/
 
-/*Operadores Rest e Spread*/
+/*Operadores Rest e Spread
 
 //REST - serve para pegar o resto das propriedades
 
@@ -175,5 +175,12 @@ const usuario1 = {
 
 const usuario2 = {...usuario1, empresa2: 'Maptriz', nome: 'Lucas'}
 console.log(usuario2);
+*/
 
+/* Template literal*/
+
+const nome = 'Diego';
+const idade = 22;
+
+console.log(`Meu nome é ${nome} e tenho ${idade} anos`);
 
