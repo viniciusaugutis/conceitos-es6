@@ -198,7 +198,7 @@ const usuario = {
 }
 console.log(usuario);*/
 
-import { sub, soma as somaFuncoes} from './funcoes';
+/*import { sub, soma as somaFuncoes} from './funcoes';
 import somaFunction from './soma';
 import * as funcoes from './funcoes';
 
@@ -208,4 +208,6 @@ console.log(sub(4, 2));
 console.log(funcoes);
 
 //export default ele nao precisa das chaves {} para importacao dele nos outros arquivos
+*/
 
+alert('Opa');
