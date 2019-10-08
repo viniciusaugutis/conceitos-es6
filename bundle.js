@@ -93,12 +93,36 @@ const teste = () => {
 
 console.log(teste());*/
 
-/*Valores padrão*/
-function soma() {
-  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
-  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 3;
-  return a + b;
+/*Valores padrão
+
+function soma (a = 1, b = 3) {
+    return a + b;
 }
 
+const somaArrowFunction = (a = 3, b = 6) => a + b;
 soma(1);
 console.log(soma());
+*/
+
+/*Desestruturação de objetos*/
+var usuario = {
+  nome: 'Diego',
+  idade: 23,
+  endereco: {
+    cidade: 'Londrina',
+    estado: 'Paraná'
+  }
+};
+var nome = usuario.nome,
+    idade = usuario.idade,
+    cidade = usuario.endereco.cidade;
+console.log(nome);
+console.log(idade);
+console.log(cidade);
+
+function mostraNome(_ref) {
+  var nome = _ref.nome;
+  console.log(nome);
+}
+
+mostraNome(usuario);

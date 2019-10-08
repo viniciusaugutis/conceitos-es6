@@ -91,7 +91,7 @@ const teste = () => {
 
 console.log(teste());*/
 
-/*Valores padrão*/
+/*Valores padrão
 
 function soma (a = 1, b = 3) {
     return a + b;
@@ -100,6 +100,28 @@ function soma (a = 1, b = 3) {
 const somaArrowFunction = (a = 3, b = 6) => a + b;
 soma(1);
 console.log(soma());
+*/
 
+/*Desestruturação de objetos*/
+
+const usuario = {
+    nome: 'Diego',
+    idade: 23,
+    endereco: {
+        cidade: 'Londrina',
+        estado: 'Paraná'
+    },
+};
+
+const { nome, idade, endereco: {cidade} } = usuario;
+console.log(nome);
+console.log(idade);
+console.log(cidade);
+
+function mostraNome({ nome }) {
+    console.log(nome);
+}
+
+mostraNome(usuario);
 
 
