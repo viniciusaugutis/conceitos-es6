@@ -210,4 +210,30 @@ console.log(funcoes);
 //export default ele nao precisa das chaves {} para importacao dele nos outros arquivos
 */
 
-alert('Opa');
+//Promise comum
+const minhaPromise = () => new Promise((resolve, reject) => {
+    setTimeout(() => { resolve('Ok') }, 2000);
+});
+
+/*minhaPromise().then(response => {
+    console.log(response);
+})
+.catch(err => {
+    console.log(err);
+});*/
+
+//await é a mesma coisa que o .then()
+async function executaPromise() {
+    console.log(await minhaPromise());
+    console.log(await minhaPromise());
+    console.log(await minhaPromise());
+}
+
+const executaPromiseArrowFunction = async () => {
+    console.log(await minhaPromise());
+    console.log(await minhaPromise());
+    console.log(await minhaPromise());
+};
+
+executaPromise();
+executaPromiseArrowFunction();
